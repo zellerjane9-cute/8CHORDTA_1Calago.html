@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discovering Excellence at Pagadian City Science High School</title>
+  <style>
+    /* General page setup */
+    body {
+      font-family: 'Montserrat', 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #dce6f9, #ffffff);
+      color: #0d1b3d;
+      margin: 0;
+      padding: 0;
+      background-image: url('boarder.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      scroll-behavior: smooth;
+    }
+
+    /* Header section */
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      padding: 20px 40px;
+      background: rgba(0, 0, 0, 0.35);
+      flex-wrap: nowrap;
+      text-align: center;
+      animation: fadeDown 1.5s ease-out;
+    }
+
+    /* Logo images */
+    header img {
+      width: 100px;
+      height: auto;
+      flex-shrink: 0;
+      transition: transform 0.3s ease, width 0.3s ease, opacity 1s ease;
+      opacity: 0;
+      animation: fadeInScale 1.5s ease-out forwards;
+    }
+
+    header img:first-child {
+      animation-delay: 0.3s;
+    }
+
+    header img:last-child {
+      animation-delay: 0.6s;
+    }
+
+    /* Middle header text */
+    .header-text {
+      max-width: 420px;
+      color: #ffd43b;
+      font-size: 1.4em;
+      font-weight: 600;
+      line-height: 1.5;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+      transition: font-size 0.3s ease;
+      opacity: 0;
+      animation: fadeUp 1.5s ease-out forwards;
+      animation-delay: 0.9s;
+    }
+
+    /* Title */
+    h1 {
+      text-align: center;
+      font-size: 2.6em;
+      margin-top: 10px;
+      font-weight: 700;
+      color: #002a5c;
+      text-shadow: 1px 1px 4px rgba(255, 215, 0, 0.6);
+    }
+
+    /* Location text */
+    .location {
+      text-align: center;
+      font-style: italic;
+      font-size: 1.15em;
+      color: #f5c400;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+      margin-bottom: 30px;
+    }
+
+    /* Section container */
+    section {
+      width: 80%;
+      margin: 0 auto 40px;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 25px 35px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Section headings */
+    section h2 {
+      color: #cc9e00;
+      text-transform: uppercase;
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #cc9e00;
+      padding-bottom: 8px;
+    }
+
+    /* Paragraphs */
+    section p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      color: #0d1b3d;
+      text-align: justify;
+    }
+
+    /* Footer */
+    footer {
+      background: #002a5c;
+      text-align: center;
+      padding: 25px;
+      font-size: 1.1em;
+      color: #ffd43b;
+      letter-spacing: 1px;
+      box-shadow: 0 -3px 10px rgba(0,0,0,0.2);
+    }
+
+    /* --- Scroll animations --- */
+    .scroll-animate {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1s ease-out;
+    }
+
+    .scroll-animate.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* --- Responsive adjustments --- */
+    @media (max-width: 992px) {
+      header {
+        flex-wrap: wrap;
+        gap: 25px;
+      }
+      header img {
+        width: 85px;
+      }
+      .header-text {
+        font-size: 1.2em;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+      }
+      header img {
+        width: 70px;
+        transform: scale(0.95);
+      }
+      .header-text {
+        font-size: 1.05em;
+        max-width: 90%;
+      }
+    }
+
+    /* --- Keyframes --- */
+    @keyframes fadeDown {
+      from {opacity: 0; transform: translateY(-30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeInScale {
+      from {opacity: 0; transform: scale(0.8);}
+      to {opacity: 1; transform: scale(1);}
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="pagsci-logo.jpg" alt="PagSci Logo">
+    <h2 class="header-text">
+      Department of Education - Region IX<br>
+      Pagadian City Science High School<br>
+      <span style="font-size: 0.9em; font-style: italic; color: #ffe67a;">
+        "A Premier Institution for Science and Excellence"
+      </span>
+    </h2>
+    <img src="deped-loho.jpg" alt="DepEd Logo">
+  </header>
+
+  <h1>Discovering Excellence at Pagadian City Science High School</h1>
+  <p class="location">Tiguma, Pagadian City, Zamboanga del Sur</p>
+
+  <section id="what-is-pagsci" class="scroll-animate">
+    <h2>What is PagSci?</h2>
+    <p>
+      Pagadian City Science High School, fondly called PagSci, is a premier public science high school dedicated to nurturing young minds through quality education, scientific exploration, and leadership. Guided by its mission to develop competent and value-driven students, PagSci emphasizes excellence in both academics and character. Its environment promotes innovation, discipline, and collaboration — shaping the youth to become future scientists, engineers, and leaders of the community.
+    </p>
+  </section>
+
+  <section id="why-choose-pagsci" class="scroll-animate">
+    <h2>Why Choose PagSci?</h2>
+    <p>
+      Choosing PagSci means choosing a future of possibilities. The school offers a challenging yet supportive learning atmosphere, modern facilities, and a curriculum that empowers students to excel in science, mathematics, and research. More than academic achievements, PagSci values integrity, resilience, and service — making every student not only intelligent but also compassionate and socially responsible. Here, every learner discovers their purpose and their passion for a brighter tomorrow.
+    </p>
+  </section>
+
+  <!-- 📝 Summary Section -->
+  <section id="summary" class="scroll-animate">
+    <h2>Summary</h2>
+    <p>
+      Pagadian City Science High School stands as a beacon of academic excellence and innovation in the region. Through its commitment to science, research, and holistic education, the school continues to empower young learners to reach their fullest potential. Every PagScian is molded not only to achieve success but also to serve with compassion, discipline, and leadership. As the institution continues to inspire the next generation of thinkers and leaders, PagSci remains true to its mission — <strong>to discover excellence and make a difference in every learner’s journey.</strong>
+    </p>
+  </section>
+
+  <footer>
+    © 2025 Pagadian City Science High School | Striving for Excellence in Education
+  </footer>
+
+  <!-- ✨ Scroll Animation Script -->
+  <script>
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    document.querySelectorAll(".scroll-animate").forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>
